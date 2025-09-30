@@ -1,0 +1,346 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #ff9000;
+}
+
+/* 年龄验证页面样式 */
+.age-verification {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+
+.language-selector {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-icon {
+    margin-right: 5px;
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.age-verification-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.age-warning {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.btn-notice {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ff9000;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.age-notice {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terms-link {
+    color: #ff9000;
+    text-decoration: underline;
+}
+
+.age-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-age {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enter {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #ff9000;
+}
+
+.btn-enter:hover {
+    background-color: #444;
+}
+
+.btn-exit {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-exit:hover {
+    background-color: #444;
+}
+
+.parental-control {
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rta-logo {
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* 主页样式 */
+.main-header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #252525;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-logo {
+    width: 120px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 20px;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.search-icon {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.nav-tabs {
+    display: flex;
+    overflow-x: auto;
+    background-color: #000;
+    padding: 0 20px;
+    border-bottom: 1px solid #252525;
+}
+
+.nav-tab {
+    padding: 15px 20px;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+}
+
+.nav-tab.active {
+    color: #ff9000;
+}
+
+.nav-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff9000;
+}
+
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 15px 20px;
+    gap: 10px;
+    background-color: #0f0f0f;
+}
+
+.category {
+    background-color: #272727;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+}
+
+.card-thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.card-duration {
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.ai-button {
+    background-color: #ff9000;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .age-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-age {
+        max-width: 90%;
+    }
+    
+    .age-warning {
+        font-size: 28px;
+    }
+    
+    .age-notice {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        display: none;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
