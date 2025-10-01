@@ -9,6 +9,9 @@
 body {
     background-color: #0f0f0f;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -23,17 +26,38 @@ a {
     min-height: 100vh;
     background-color: #000;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.age-verification-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    box-shadow: 
+        0 0 10px #fff,
+        0 0 20px rgba(255, 255, 255, 0.5);
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .language-selector {
     position: absolute;
     top: 15px;
-    right: 15px;
+    left: 15px;
     color: #fff;
     font-size: 14px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 }
 
 .language-icon {
@@ -51,6 +75,8 @@ a {
     text-align: center;
     padding: 20px;
     margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .logo-container {
@@ -64,9 +90,10 @@ a {
 }
 
 .age-warning {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 30px;
-    font-weight: normal;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
 }
 
 .btn-notice {
@@ -88,6 +115,11 @@ a {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.age-notice p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .terms-link {
@@ -139,6 +171,10 @@ a {
     font-size: 14px;
 }
 
+.parental-control p {
+    font-size: 16px;
+}
+
 .footer {
     margin-top: 20px;
     font-size: 14px;
@@ -146,6 +182,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer p {
+    font-size: 16px;
 }
 
 .rta-logo {
@@ -159,7 +199,6 @@ a {
     background-color: #000;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #252525;
 }
@@ -168,21 +207,23 @@ a {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .header-logo {
     width: 120px;
+    margin-right: auto;
 }
 
 .user-menu {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .user-icon {
     color: #fff;
     font-size: 24px;
-    margin-left: 15px;
     cursor: pointer;
 }
 
@@ -190,25 +231,27 @@ a {
     display: flex;
     align-items: center;
     background-color: #2a2a2a;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 0 20px;
-    flex-grow: 1;
-    max-width: 600px;
+    border-radius: 25px;
+    padding: 5px 15px;
+    max-width: 700px;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .search-input {
     background-color: transparent;
     border: none;
     color: #fff;
-    padding: 5px;
+    padding: 8px;
     width: 100%;
     outline: none;
 }
 
 .search-icon {
     color: #fff;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .nav-tabs {
@@ -309,10 +352,12 @@ a {
     background-color: #ff9000;
     color: #000;
     border: none;
-    border-radius: 4px;
     padding: 8px 15px;
+    border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    left: calc(50% + 360px);
 }
 
 /* 响应式设计 */
