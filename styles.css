@@ -194,6 +194,26 @@ a {
     vertical-align: middle;
 }
 
+/* 顶部导航栏样式 */
+.top-nav {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #252525;
+}
+
+.top-nav a {
+    color: #95977b;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.top-nav a:hover {
+    color: #fff;
+}
+
 /* 主页样式 */
 .main-header {
     background-color: #000;
@@ -204,7 +224,7 @@ a {
 }
 
 .menu-icon {
-    color: #fff;
+    color: #ff9000;
     font-size: 24px;
     cursor: pointer;
     margin-right: 10px;
@@ -222,9 +242,17 @@ a {
 }
 
 .user-icon {
-    color: #fff;
+    color: #000;
+    background-color: #808080;
+    border-radius: 50%;
+    padding: 5px;
     font-size: 24px;
     cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-container {
@@ -353,7 +381,7 @@ a {
     color: #000;
     border: none;
     padding: 8px 15px;
-    border-radius: 4px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     position: absolute;
