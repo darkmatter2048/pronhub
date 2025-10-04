@@ -1,8 +1,10 @@
 <p align="center">
   <a href="https://pronhub.dyblog.online/">
-    <img src="logo.png" alt="代词学习平台" width="250">
+    <img src="logo.png" alt="代词学习平台" width="260">
   </a>
 </p>
+
+<h3 align="center">一个正经的代词学习网站</h3>
 
 <p align="center">
   <a href="https://pronhub.dyblog.online/" target="_blank">
