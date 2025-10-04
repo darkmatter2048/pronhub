@@ -288,6 +288,14 @@ a {
     background-color: #0f0f0f;
     padding: 0 20px;
     border-bottom: 1px solid #252525;
+    /* 隐藏滚动条 */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* 隐藏滚动条 - Webkit浏览器 (Chrome, Safari等) */
+.nav-tabs::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-tab {
@@ -327,6 +335,14 @@ a {
     padding: 15px 20px;
     gap: 10px;
     background-color: #000;
+    /* 隐藏滚动条 */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* 隐藏滚动条 - Webkit浏览器 (Chrome, Safari等) */
+.categories::-webkit-scrollbar {
+    display: none;
 }
 
 .category {
@@ -398,8 +414,189 @@ a {
     left: calc(50% + 360px);
 }
 
+/* 搜索结果样式 */
+.search-result-count {
+    grid-column: 1 / -1;
+    color: #ff9000;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 无搜索结果样式 */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+}
+
+.no-results p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 重置搜索按钮样式 */
+.btn-reset-search {
+    background-color: #ff9000;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-reset-search:hover {
+    background-color: #e67e00;
+}
+
+/* 加载消息样式 */
+.loading-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+/* 错误消息样式 */
+.error-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #ff6b6b;
+    font-size: 18px;
+}
+
 /* 响应式设计 */
+@media (max-width: 1200px) {
+    .search-container {
+        max-width: 500px;
+        width: 500px;
+    }
+    
+    .ai-button {
+        left: calc(50% + 260px);
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        max-width: 400px;
+        width: 400px;
+    }
+    
+    .ai-button {
+        left: calc(50% + 210px);
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nav-tab {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .category {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+        margin: 15px;
+    }
+}
+
 @media (max-width: 768px) {
+    .top-nav {
+        padding: 8px 15px;
+    }
+    
+    .top-nav a {
+        font-size: 12px;
+        margin: 0 8px;
+    }
+    
+    .main-header {
+        padding: 8px 15px;
+    }
+    
+    .header-logo {
+        width: 100px;
+    }
+    
+    .search-container {
+        max-width: 300px;
+        width: 300px;
+        padding: 4px 12px;
+    }
+    
+    .ai-button {
+        position: static;
+        margin-left: 10px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .user-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+    
+    .nav-tabs {
+        padding: 0 15px;
+    }
+    
+    .nav-tab {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .categories {
+        padding: 12px 15px;
+        gap: 8px;
+    }
+    
+    .category {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin: 15px;
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .card-title {
+        font-size: 13px;
+    }
+    
+    .card-meta {
+        font-size: 11px;
+    }
+    
     .age-buttons {
         flex-direction: column;
         align-items: center;
@@ -416,14 +613,216 @@ a {
     .age-notice {
         font-size: 14px;
     }
+    
+    .footer-links a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .top-nav {
+        display: none;
+    }
+    
+    .main-header {
+        padding: 8px 10px;
+    }
+    
+    .header-logo {
+        width: 80px;
+    }
+    
+    .menu-icon {
+        margin-right: 8px;
+    }
+    
     .search-container {
         display: none;
     }
     
+    .ai-button {
+        display: none;
+    }
+    
+    .user-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    .nav-tabs {
+        padding: 0 10px;
+    }
+    
+    .nav-tab {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    
+    .categories {
+        padding: 10px;
+        gap: 6px;
+    }
+    
+    .category {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+        margin: 10px;
+    }
+    
     .content-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-meta {
+        font-size: 10px;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-links a {
+        display: block;
+        width: 100%;
+        margin: 3px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 70px;
+    }
+    
+    .nav-tab {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+    
+    .category {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+        margin: 8px;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 8px;
+    }
+    
+    .card-info {
+        padding: 8px;
+    }
+    
+    .card-title {
+        font-size: 11px;
+    }
+    
+    .card-meta {
+        flex-direction: column;
+        gap: 3px;
+    }
+    
+    .card-meta span {
+        font-size: 10px;
+    }
+    
+    .age-warning {
+        font-size: 24px;
+    }
+    
+    .age-notice {
+        font-size: 12px;
+    }
+    
+    .age-notice p {
+        font-size: 14px;
+    }
+    
+    .btn-notice {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-age {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-logo {
+        width: 60px;
+    }
+    
+    .nav-tab {
+        padding: 5px 6px;
+        font-size: 10px;
+    }
+    
+    .category {
+        padding: 3px 5px;
+        font-size: 10px;
+    }
+    
+    .section-title {
+        font-size: 14px;
+        margin: 5px;
+    }
+    
+    .content-grid {
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .card-info {
+        padding: 5px;
+    }
+    
+    .age-warning {
+        font-size: 20px;
+    }
+    
+    .age-notice {
+        font-size: 11px;
+    }
+    
+    .age-notice p {
+        font-size: 12px;
+    }
+    
+    .btn-notice {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    
+    .btn-age {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .logo {
+        width: 120px;
     }
 }
