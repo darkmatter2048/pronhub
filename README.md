@@ -10,23 +10,23 @@
   <a href="https://pronhub.dyblog.online/" target="_blank">
     <img src="https://img.shields.io/badge/Website-Online-brightgreen" alt="Website">
   </a>
-  <a href="https://github.com/yourusername/pronhub" target="_blank">
+  <a href="https://github.com/darkmatter2048/pronhub" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-Repository-blue" alt="GitHub">
   </a>
-  <a href="https://github.com/yourusername/pronhub/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/yourusername/pronhub?style=social" alt="GitHub stars">
+  <a href="https://github.com/darkmatter2048/pronhub/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/darkmatter2048/pronhub?style=social" alt="GitHub stars">
   </a>
-  <a href="https://github.com/yourusername/pronhub/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/github/license/yourusername/pronhub" alt="License">
+  <a href="https://github.com/darkmatter2048/pronhub/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/github/license/darkmatter2048/pronhub" alt="License">
   </a>
 </p>
 
 <p align="center">
   <a href="https://pronhub.dyblog.online/"><strong>访问网站 »</strong></a>
   ·
-  <a href="https://github.com/yourusername/pronhub/issues"><strong>报告问题 »</strong></a>
+  <a href="https://github.com/darkmatter2048/pronhub/issues"><strong>报告问题 »</strong></a>
   ·
-  <a href="https://github.com/yourusername/pronhub/pulls"><strong>贡献代码 »</strong></a>
+  <a href="https://github.com/darkmatter2048/pronhub/pulls"><strong>贡献代码 »</strong></a>
 </p>
 
 ## 📝 项目简介
@@ -54,7 +54,7 @@
 ## 🌟 Star History
 
 <p align="center">
-  <a href="https://star-history.com/#yourusername/pronhub&Date">
-    <img src="https://api.star-history.com/svg?repos=yourusername/pronhub&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#darkmatter2048/pronhub&Date">
+    <img src="https://api.star-history.com/svg?repos=darkmatter2048/pronhub&type=Date" alt="Star History Chart">
   </a>
 </p>
