@@ -327,7 +327,7 @@ function createCardElement(cardData) {
     card.innerHTML = `
         <div class="card-thumbnail-container">
             ${iframeHtml}
-            <div class="card-duration">${cardData.duration}</div>
+            <!--<div class="card-duration">${cardData.duration}</div>-->
         </div>
         <div class="card-info">
             <h3 class="card-title">${title}</h3>

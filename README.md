@@ -1,10 +1,8 @@
 <p align="center">
   <a href="https://pronhub.dyblog.online/">
-    <img src="logo.png" alt="代词学习平台" width="200">
+    <img src="logo.png" alt="代词学习平台" width="250">
   </a>
 </p>
-
-<h3 align="center">Pronhub</h3>
 
 <p align="center">
   <a href="https://pronhub.dyblog.online/" target="_blank">
@@ -42,6 +40,10 @@
 >
 >[https://pronhub.dyblog.online/](https://pronhub.dyblog.online/)
 
+### 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/darkmatter2048/pronhub)
+
 
 ## ✨ 主要功能
 
@@ -49,7 +51,6 @@
 - **智能搜索功能**：快速找到您需要的学习内容
 - **分类浏览**：按类别浏览不同的代词学习资料
 - **响应式设计**：适配各种设备，包括桌面、平板和手机
-- **多语言支持**：支持中文等多种语言界面
 
 ## 🌟 Star History
 
